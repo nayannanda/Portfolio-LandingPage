@@ -1,0 +1,152 @@
+
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Inter',sans-serif;
+}
+
+/*  SAME BACKGROUND AS LANDING PAGE */
+body{
+  background: linear-gradient(
+    270deg,
+    rgba(2,6,23,0.8),
+    rgba(30,58,138,0.6),
+    rgba(147,51,234,0.6)
+  );
+  color:#fff;
+}
+
+/* NAV */
+nav{
+  display:flex;
+  justify-content:space-between;
+  padding:20px 8%;
+  background:rgba(0,0,0,0.4);
+  backdrop-filter:blur(10px);
+}
+
+nav a{
+  color:#fff;
+  text-decoration:none;
+  margin-left:20px;
+}
+
+/* HEADER */
+.header{
+  text-align:center;
+  margin:40px 0;
+}
+
+.header h1{
+  font-size:36px;
+}
+
+.header p{
+  color:#cbd5f5;
+}
+
+/* LAYOUT */
+.container{
+  display:flex;
+  justify-content:center;
+  padding:20px;
+}
+
+.wrapper{
+  display:flex;
+  gap:20px;
+  width:100%;
+  max-width:1100px;
+}
+
+/* LEFT SIDE */
+.contact-info{
+  flex:1;
+}
+
+/*  CARD */
+.info-box{
+  display:flex;
+  align-items:center;
+  gap:15px;
+  background:rgba(255,255,255,0.05);
+  padding:15px;
+  border-radius:12px;
+  margin-bottom:15px;
+  backdrop-filter:blur(10px);
+  border:1px solid rgba(255,255,255,0.1);
+  transition:0.3s;
+  text-decoration:none;
+  color:#fff;
+}
+
+/*  HOVER */
+.info-box:hover{
+  transform:translateY(-5px) scale(1.02);
+  background:#38bdf8;
+  color:#000;
+}
+
+/* RIGHT SIDE FORM */
+.form-box{
+  flex:1;
+  background:rgba(255,255,255,0.05);
+  padding:25px;
+  border-radius:12px;
+  backdrop-filter:blur(10px);
+  border:1px solid rgba(255,255,255,0.1);
+}
+
+.form-box h2{
+  text-align:center;
+  margin-bottom:20px;
+}
+
+/* FORM */
+input,textarea{
+  width:100%;
+  padding:12px;
+  margin-bottom:15px;
+  border-radius:8px;
+  border:none;
+  background:#1e293b;
+  color:#fff;
+}
+
+button{
+  width:100%;
+  padding:12px;
+  background:linear-gradient(135deg,#38bdf8,#0ea5e9);
+  color:#000;
+  border:none;
+  border-radius:8px;
+  cursor:pointer;
+  font-weight:600;
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:20px;
+  color:#cbd5f5;
+}
+
+
+@media(max-width:768px){
+  .wrapper{
+    flex-direction:column;
+  }
+
+  .header h1{
+    font-size:28px;
+  }
+}
+
+
+@media(min-width:769px) and (max-width:1024px){
+  .wrapper{
+    flex-direction:column;
+  }
+}
